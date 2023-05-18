@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="../../favicon.ico">
+		<title>SADA</title>
+
+		<!-- Bootstrap CSS CDN -->
+		<link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome css -->
+		<link href="../../plugins/fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link href="../../plugins/fontawesome/css/brands.css" rel="stylesheet">
+		<link href="../../plugins/fontawesome/css/solid.css" rel="stylesheet">
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+		<!-- My Custom CSS -->
+		<link rel="stylesheet" href="../../inc/css/fixed_partially_collapsing.css">
+		<!-- Scrollbar Custom CSS -->
+		<link href="../../plugins/scrollbar/scrollbar.css" rel="stylesheet">
+	</head>
+	<body id="all" class="mCustomScrollbar" data-mcs-theme="minimal-dark" style="width: 100%; height: 100vh;">
+		<div class="wrapper">
+
+			<!-- Sidebar Holder -->
+			<nav id="sidebar" class="mCustomScrollbar" data-mcs-theme="minimal">
+				<nav class="navbar navbar-dark" id="sidebar-nav">
+					<a class="navbar-brand" href="#">
+						<img src="../../inc/m_icons/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="Icon">
+						<span>SADA</span>
+					</a>
+				</nav>
+				<div class="sidebar-admin-cred">
+					<img src="../../inc/img/user1.jpg" width="45" height="45">
+					<ul id="sp">
+						<li id="sp1"> Agajan Sahatov</li> <!--max=>20char-->
+						<li id="sp2"><i class="fas fa-circle"></i> <span id="sp2_txt">Online</span></li>
+					</ul>
+				</div>
+				<ul class="list-unstyled components accordion" id="SidebarElem">
+					<li>
+						<a href="../../index.html"><i class="fas fa-home"></i><span> &nbsp Home</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-tachometer-alt"></i><span> &nbsp Dashboard</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-snowflake"></i><span> &nbsp Widgets</span></a><!-- <i class="fas fa-th"></i> -->
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-chart-pie"></i><span> &nbsp Charts</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-envelope"></i><span> &nbsp Mailboxes</span></a>
+					</li>
+					<li class="active">
+						<a href="#e-layouts" data-target="#e-layouts" aria-controls="e-layouts" class="dropdown-toggle" aria-expanded="true" data-toggle="collapse">
+							<i class="fas fa-tv"></i><span> &nbsp Layouts</span>
+						</a>
+						<ul id="e-layouts" class="sidebar-open list-unstyled collapse show" data-parent="#SidebarElem">
+							<li>
+								<a href="../../pages/layouts/layout_simple.html"><i class="fas fa-circle-notch"></i> &nbsp Simple</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Partially Collapsing</a>
+							</li>
+							<li>
+								<a href="../../pages/layouts/layout_animated.html"><i class="fas fa-circle-notch"></i> &nbsp Animated</a>
+							</li>
+							<li>
+								<a href="../../pages/layouts/layout_fixed.html"><i class="fas fa-circle-notch"></i> &nbsp Fixed</a>
+							</li>
+							<li class="aktiv">
+								<a href="../../pages/layouts/fixed_partially_collapsing.html"><i class="fas fa-circle-notch"></i> &nbsp Fixed Partially Collapsing</a>
+							</li>
+							<li>
+								<a href="../../pages/layouts/layout_fixed_animated.html"><i class="fas fa-circle-notch"></i> &nbsp Fixed Animated</a>
+							</li>
+							<li>
+								<a href="../../pages/layouts/content_overlay.html"><i class="fas fa-circle-notch"></i> &nbsp Content Overlay</a>
+							</li>
+							<li>
+								<a href="../../pages/layouts/top_navigation.html"><i class="fas fa-circle-notch"></i> &nbsp Top Navigation</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#e-pages" data-target="#e-pages" aria-controls="e-pages" class="dropdown-toggle collapsed" aria-expanded="false" data-toggle="collapse">
+							<i class="fas fa-layer-group"></i><span> &nbsp Example pages</span>
+						</a>
+						<ul id="e-pages" class="sidebar-open list-unstyled collapse" data-parent="#SidebarElem">
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp 404 Error</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp 500 Error</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Login</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Register</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Lockscreen</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Profile</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#e-uis" data-target="#e-uis" aria-controls="e-uis" class="dropdown-toggle collapsed" aria-expanded="false" data-toggle="collapse">
+							<i class="fas fa-shapes"></i><span> &nbsp Elements</span> <!-- <i class="fas fa-cubes"></i> -->
+						</a>
+						<ul id="e-uis" class="sidebar-open list-unstyled collapse" data-parent="#SidebarElem">
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Generals</a>
+							</li>
+							<li>
+								<a href="https://fontawesome.com/icons?d=gallery&m=free"><i class="fas fa-circle-notch"></i> &nbsp Icons</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Buttons</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Sliders</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Timeline</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Modals</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#e-forms" data-target="#e-forms" aria-controls="e-forms" class="dropdown-toggle collapsed" aria-expanded="false" data-toggle="collapse">
+							<i class="fas fa-edit"></i><span> &nbsp Forms</span>
+						</a>
+						<ul id="e-forms" class="sidebar-open list-unstyled collapse" data-parent="#SidebarElem">
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp General Elements</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Advanced Elements</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Editors</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#e-tbls" data-target="#e-tbls" aria-controls="e-tbls" class="dropdown-toggle collapsed" aria-expanded="false" data-toggle="collapse">
+							<i class="fas fa-table"></i><span> &nbsp Tables</span>
+						</a>
+						<ul id="e-tbls" class="sidebar-open list-unstyled collapse" data-parent="#SidebarElem">
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Simple tables</a>
+							</li>
+							<li>
+								<a href="#"><i class="fas fa-circle-notch"></i> &nbsp Data tables</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-address-card"></i><span> &nbsp About Us</span></a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Page Content Holder -->
+			<div id="content">
+				<nav class="navbar navbar-dark fixed-top" style="border-left: none; margin-left: -1px" id="navbar-top">
+					<div id="logo2" class="logo2">
+						<a class="navbar-brand" href="#" style="padding-left: 0">
+							<img src="../../inc/m_icons/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="Icon" >
+						</a>
+					</div>
+					<ul class="navbar-nav mr-auto">
+						<button type="button" id="sidebarCollapse" class="navbar-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</ul>
+					<a class="navbar-brand" data-toggle="collapse" href="#adm-drop-down" id="admin-cred" role="button" aria-expanded="false" aria-controls="adm-drop-down">
+						<span class="brand"> Agajan Sahatov</span> <!--max=>20char-->
+						<img src="../../inc/img/user1.jpg" width="30" height="30" class="d-inline-block align-top" alt="Admin Photo" style="border-radius: 50%;">
+					</a>
+				</nav>
+
+				<div class="main-body" id="main-body">
+					<!-- Dropdown navbar-admin-cred(Buttton is located in the navbar-top)-->
+					<div class="collapse" id="adm-drop-down">
+						<div class="card text-white mb-3" style="max-width: 18rem;">
+							<div class="card-header">
+								<div style="width: 100%;">
+									<span class="brand" style="font-size: 21px">Agajan Sahatov</span>
+									<br>
+									Web Developer
+								</div>
+								<div class="d-flex justify-content-center" style="width: 100%;">
+									<img src="../../inc/img/user1.jpg" width="75" height="75">
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="d-flex justify-content-around">
+									<li>
+										<span>20000</span>
+										<br>
+										<p>FOLLOWERS</p>
+									</li>
+									<li>
+										<span>4235</span>
+										<br>
+										<p>SALES</p>
+									</li>
+									<li>
+										<span>4235</span>
+										<br>
+										<p>PRODUCTS</p>
+									</li>
+								</div>
+								<p class="card-text">Member since Sep.2019. Started Web Developing in 2016. Both back-end and front-end developer...</p> 
+							</div>
+							<div class="card-footer">
+								<a class="btn btn-success float-left" href="#" role="button">Profile</a>
+								<a class="btn btn-danger float-right" href="#" role="button">Log out</a>
+						    </div>
+						</div>
+					</div>
+
+
+
+					<!-- PAGE CONTENT STARTS HERE-->
+					<h1>Fixed Partially Collapsing Layout</h1>
+					<h2>Lorem Ipsum Dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div class="line"></div>
+					<h2>Lorem Ipsum Dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div class="line"></div>
+					<h2>Lorem Ipsum Dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div class="line"></div>
+					<h3>Lorem Ipsum Dolor</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../plugins/bootstrap/jquery-3.3.1.slim.min.js"></script>
+		<script src="../../plugins/bootstrap/popper.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- jQuery Custom Scroller CDN -->
+		<script src="../../plugins/scrollbar/scrollbar.js"></script>
+		<!-- My Scripts -->
+		<script src="../../inc/js/fixed_partially_collapsing.js"></script>
+	</body>
+</html>
+<!--
+	1-Scroll bar goymaly
+	2-Layout goymaly
+-->

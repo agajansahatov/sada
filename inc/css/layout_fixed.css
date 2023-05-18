@@ -1,0 +1,328 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=cyrillic');
+
+body {
+	/* font-family: 'Source Sans Pro', 'Open Sans', 'Roboto', 'Roboto Slab','Nunito', 'Noto Serif', 'Slabo 27px', sans-serif; */
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #fafafa;
+	font-weight: 400;
+	font-size: 15px;
+}
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.wrapper {
+	display: flex;
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	background: #222d32;
+	color: #b8c7ce;
+	font-size: 12px;
+	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+	transform-origin: bottom left;
+	z-index: 999;
+}
+#sidebar.active {
+	margin-left: -250px;
+}
+#sidebar ul { padding: 0; }
+#sidebar ul.components{ padding-bottom: 50px; }
+#sidebar ul ul{ transition: all 0.6s; }
+#sidebar-nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+/* THe admin creadentials inside the sidebar */
+.sidebar-admin-cred{
+	padding: 0;
+	margin: 0;
+	margin-top: 50px;
+	padding-top: 30px;
+}
+.sidebar-admin-cred img{
+	border-radius: 50%;
+	float: left;
+	margin-left: 22px;
+	margin-right: 10px;
+}
+.sidebar-admin-cred #sp1{
+	color: #ffffff;
+	font-size: 15px;
+	font-family: 'Open Sans', serif;	
+	list-style: none;
+}
+.sidebar-admin-cred #sp2{
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: 3px;
+	list-style: none;
+}
+.sidebar-admin-cred #sp2 i{
+	color: #17c10e;
+	font-size: 10px;
+	margin-right: 3px;
+	margin-left: 1px;
+}
+
+#sidebar ul li{
+	transition: all 1s;
+}
+#sidebar ul li a {
+	padding: 10px;
+	padding-left: 22px;
+	font-size: 15px;
+	display: block;
+}
+#sidebar ul li a:hover {
+	background: #1e282c;
+	color: #ffffff;
+}
+/*Sidebar accordion Acylanda border-left etc*/
+#sidebar ul li.active > a, #sidebar a[aria-expanded="true"] {
+	color: #fff;
+	background: #1e282c;
+	border-left: 3px solid #17c10e;
+	transition: all 0.4s;
+}
+#sidebar a[aria-expanded="true"]{
+	border-left: 3px solid #0B761A; 
+}
+/*Dropdown toggle icon - rotating etc*/
+a[data-toggle="collapse"] {
+	position: relative;
+}
+.dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: rotate(90deg);
+	transition: all 0.6s;
+}
+#sidebar a[aria-expanded="true"].dropdown-toggle::after{
+	transform: rotate(0deg);
+}
+/* Acylanda-arka fon etc */
+ul ul a {
+	font-size: 14px !important;
+	padding-left: 30px !important;
+	background: #2c3b41;
+}
+ul ul .aktiv{
+	color: #ffffff;
+}
+ul ul .aktiv i, ul ul li:hover i{
+	transform: rotate(90deg);
+	transition: all 0.4s;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+	width: 100%;
+	min-height: 100vh;
+	transition: all 0.5s;
+}
+#content .navbar{
+	border-left: none;
+	left: 250px;
+	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+}
+#content .navbar.active{
+	left: 0;
+}
+#content #admin-cred:hover, #content .navbar a[aria-expanded="true"]{
+	background-color: rgba(255,255,255,0.05);
+}
+/* Hidden logo */
+.logo2{
+	opacity: 0;
+	width: 30px;
+	margin-left: -30px;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+	transition-delay: 0.2s;
+}
+.logo2active{
+	opacity: 1;
+	width: 30px;
+	margin-left: 0px;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+	transition-delay: 0.2s;
+}
+/*sidebar-colapse BUTTON */
+#sidebarCollapse {
+	width: 35px;
+	height: 35px;
+	background: none;
+	cursor: pointer;
+	box-shadow: none;
+	outline: none !important;
+	border: none;
+	padding-left: 0;
+	margin-left: 3px;
+}
+#sidebarCollapse span {
+	width: 80%;
+	height: 2px;
+	margin: 0 auto;
+	display: block;
+	background: #ffffff;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+	transition-delay: 0.2s;
+}
+#sidebarCollapse span:first-of-type {
+	transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+	opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+	transform: rotate(-45deg) translate(1px, -1px);
+}
+#sidebarCollapse.active span {
+	transform: none;
+	opacity: 1;
+	margin: 5px auto;
+}
+
+/* MAIN BODY */
+#content .main-body{
+	width: 100%;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 250px;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+#content .main-body.active{
+	width: 100%;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 0;
+}
+/* Admin-drop-down-CARD - (Button is located in navbar) */
+#adm-drop-down{
+	position: fixed;
+	right: 1px;
+	top: 51px;
+}
+#adm-drop-down .card{
+	background: #222d32;
+}
+#adm-drop-down img{
+	border-radius: 50%;
+	margin-bottom: -20px;
+	margin-top: -5px;
+	border: 3px solid #343a40;
+    /* #17c10e; -> Default green color */
+}
+#adm-drop-down .card-header{
+	padding-bottom: 0;
+	background: #1e282c; 
+}
+#adm-drop-down .card-body div:first-of-type{
+	margin-top: 15px;
+}
+#adm-drop-down li{
+	text-align: center;
+	list-style: none;
+	font-size: 14px;
+}
+#adm-drop-down li span{
+	font-weight: 600;
+}
+#adm-drop-down li p{
+	font-weight: 300;
+}
+
+/* ---------------------------------------------------
+    NAVBAR-TOP STYLE
+----------------------------------------------------- */
+/* This is for the both sidebar and content navbar-tops */
+.navbar{
+	padding-top: 0;
+	padding-bottom: 0;
+	background: #1e282c;
+	padding-right: 2px;
+	max-height: 50px;
+	overflow: hidden;
+}
+.navbar-brand{
+	padding: 10px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+	#sidebar {
+		margin-left: -250px;
+		transform: rotateY(90deg);
+	}
+	#sidebar.active {
+		margin-left: 0;
+		transform: none;
+	}
+	#sidebarCollapse span:first-of-type,
+	#sidebarCollapse span:nth-of-type(2),
+	#sidebarCollapse span:last-of-type {
+		transform: none;
+		opacity: 1;
+		margin: 5px auto;
+	}
+	#sidebarCollapse.active span {
+		margin: 0 auto;
+	}
+	#sidebarCollapse.active span:first-of-type {
+		transform: rotate(45deg) translate(2px, 2px);
+	}
+	#sidebarCollapse.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	#sidebarCollapse.active span:last-of-type {
+		transform: rotate(-45deg) translate(1px, -1px);
+	}
+	.logo2{
+		opacity: 1;
+		margin-left: 0px;
+	}
+	.logo2active{
+		opacity: 0;
+		margin-left: -30px;
+	}
+	#content .navbar{
+		left: 0;
+	}
+	#content .navbar.active{
+		left: 250px;
+	}
+	#content .main-body{
+		margin-left: 0;
+	}
+	#content .main-body.active{
+		margin-left: 250px;
+	}
+}
+
+/* Lorem Ipsum line */
+.line {
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+	margin: 40px 0;
+}
